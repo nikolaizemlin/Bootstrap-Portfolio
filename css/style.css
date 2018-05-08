@@ -1,11 +1,11 @@
 ﻿body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
-    color: #f5f6f7;
+    color: black;
 }
 .navbar-brand {
     background-color: #4aaaa5;
-   
+    color:black;
 }
 
 p {
@@ -42,13 +42,13 @@ p {
 }
 
 .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
     font-size: 12px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 
 .navbar-nav li a:hover {
@@ -59,8 +59,9 @@ p {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #1abc9c;
-    color: black;
+    background-color: dimgrey;
+    color: lightgray;
     text-align: center;
-    font-size: small;
+    font-size: x-small;
+    border-top: 5px solid #4aaaad;
 }
