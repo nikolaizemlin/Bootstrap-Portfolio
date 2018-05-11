@@ -1,68 +1,12 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script>
-        function magnify(imgID, zoom) {
-            var img, glass, w, h, bw;
-            img = document.getElementById(imgID);
-            /*create magnifier glass:*/
-            glass = document.createElement("DIV");
-            glass.setAttribute("class", "img-magnifier-glass");
-            /*insert magnifier glass:*/
-            img.parentElement.insertBefore(glass, img);
-            /*set background properties for the magnifier glass:*/
-            glass.style.backgroundImage = "url('" + img.src + "')";
-            glass.style.backgroundRepeat = "no-repeat";
-            glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
-            bw = 3;
-            w = glass.offsetWidth / 2;
-            h = glass.offsetHeight / 2;
-            /*execute a function when someone moves the magnifier glass over the image:*/
-            glass.addEventListener("mousemove", moveMagnifier);
-            img.addEventListener("mousemove", moveMagnifier);
-            /*and also for touch screens:*/
-            glass.addEventListener("touchmove", moveMagnifier);
-            img.addEventListener("touchmove", moveMagnifier);
-            function moveMagnifier(e) {
-                var pos, x, y;
-                /*prevent any other actions that may occur when moving over the image*/
-                e.preventDefault();
-                /*get the cursor's x and y positions:*/
-                pos = getCursorPos(e);
-                x = pos.x;
-                y = pos.y;
-                /*prevent the magnifier glass from being positioned outside the image:*/
-                if (x > img.width - (w / zoom)) { x = img.width - (w / zoom); }
-                if (x < w / zoom) { x = w / zoom; }
-                if (y > img.height - (h / zoom)) { y = img.height - (h / zoom); }
-                if (y < h / zoom) { y = h / zoom; }
-                /*set the position of the magnifier glass:*/
-                glass.style.left = (x - w) + "px";
-                glass.style.top = (y - h) + "px";
-                /*display what the magnifier glass "sees":*/
-                glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
-            }
-            function getCursorPos(e) {
-                var a, x = 0, y = 0;
-                e = e || window.event;
-                /*get the x and y positions of the image:*/
-                a = img.getBoundingClientRect();
-                /*calculate the cursor's x and y coordinates, relative to the image:*/
-                x = e.pageX - a.left;
-                y = e.pageY - a.top;
-                /*consider any page scrolling:*/
-                x = x - window.pageXOffset;
-                y = y - window.pageYOffset;
-                return { x: x, y: y };
-            }
-        }
-    </script>
+
 </head>
 <body>
     <!-- Nav Bar -->
@@ -74,26 +18,30 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Nick Hosley</a>
+                <a class="navbar-brand" href="portfolio.html">Nick Hosley</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li ::after><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="img-magnifier-container">
-        <img id="myimage" src="https://wallpaperset.com/w/full/d/3/c/363995.jpg" alt="trees" style="width: 1960px;height:1080px" />
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Nick Hosley</h1>
+            <p class="lead">When I started at Titan it was for detailing formwork drawings and took it. I have been with Titan for 14 years now and enjoy working for this company. I have done AutoCAD drawings and some Engineering for this company. I have also largely developed the R&D department. I had Titan purchase a 3D printer and Solid works even did some testing of equipment out in the field. I have helped develop a CRM program over the last two years and feel coding and programing will be a good fit for me. I also do IT stuff for Titan. I am really looking forward to this next chapter.</p>
+        </div>
     </div>
-    <script>
-        magnify("myimage", 3);
-    </script>
+    <p>Portfolio</p>
     <!-- Footer -->
     <div class="footer">
         <p>Bootstrap Theme Made By Nick Hosley &reg;</p>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </body>
 </html>
