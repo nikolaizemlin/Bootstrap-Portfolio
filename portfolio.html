@@ -1,10 +1,12 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Bootstrap Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="css/reset.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link src="ckeditor/build-config.js">
     <link src="ckeditor/config.js">
@@ -12,6 +14,7 @@
     <link src="ckeditor/styles.js">
     <script src="ckeditor/ckeditor.js"></script>
 </head>
+
 <body background="https://images.pexels.com/photos/242236/pexels-photo-242236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
     <!-- Nav Bar -->
     <nav class="navbar navbar-default">
@@ -23,16 +26,28 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="portfolio.html">Nick Hosley</a>
+                <a class="navbar-brand" href="index.html">Nick Hosley</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="https://nikolaizemlin.github.io/Psychic-Game/">Psychic</a></li>
-                    <li><a href="https://nikolaizemlin.github.io/unit-4-game/">Gem Game</a></li>
-                    <li><a href="https://nikolaizemlin.github.io/TriviaGame/">WoW Trivia</a></li>
+                    <li>
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="https://nikolaizemlin.github.io/Psychic-Game/">Psychic</a>
+                    </li>
+                    <li>
+                        <a href="https://nikolaizemlin.github.io/unit-4-game/">Gem Game</a>
+                    </li>
+                    <li>
+                        <a href="https://nikolaizemlin.github.io/TriviaGame/">WoW Trivia</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -40,26 +55,43 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4">Nicholas Steven Hosley</h1>
-            <p class="lead">This is so much fun to learn and try out new things to see how they react to oneanother.</p>
+            <p class="lead">This is so much fun to learn and try out new things to see how they react to one another.</p>
         </div>
     </div>
-    <h4><strong>I worked as a mechanic though high school and for a few years after I graduated. I opened a mechanic shop with my dad and worked with him for about 4 years. I left and went into steel construction and worked on commercial building and hung drywall for about 4 years. I then went on to build a few houses in the valley and did some TI work in some commercial building. Took a month and helped build a log cabin in Utah. I got tired of working out in the sun, so I went and got a degree and started working at Shasta Pools. Soon I was drawing all the pools for Mesa, Tempe, Ahwatukee, Chandler, Gilbert, San Tan valley, Tucson and Florence. I received a job offer at Titan for detailing formwork drawings and took it. I have been with Titan for 14 years now and enjoy working for this company. I have done AutoCAD drawings and some Engineering for this company. I have also largely developed the R&D department. I had Titan purchase a 3D printer and Solid works even did some testing of equipment out in the field. I have helped develop a CRM program over the last two years and feel coding and programing will be a good fit for me. I also do IT stuff for Titan. I am really looking forward to this next chapter.</strong></h4>
+    <h4>
+        <strong>I worked as a mechanic though high school and for a few years after I graduated. I opened a mechanic shop with my
+            dad and worked with him for about 4 years. I left and went into steel construction and worked on commercial building
+            and hung drywall for about 4 years. I then went on to build a few houses in the valley and did some TI work in
+            some commercial building. Took a month and helped build a log cabin in Utah. I got tired of working out in the
+            sun, so I went and got a degree and started working at Shasta Pools. Soon I was drawing all the pools for Mesa,
+            Tempe, Ahwatukee, Chandler, Gilbert, San Tan valley, Tucson and Florence. I received a job offer at Titan for
+            detailing formwork drawings and took it. I have been with Titan for 14 years now and enjoy working for this company.
+            I have done AutoCAD drawings and some Engineering for this company. I have also largely developed the R&D department.
+            I had Titan purchase a 3D printer and Solid works even did some testing of equipment out in the field. I have
+            helped develop a CRM program over the last two years and feel coding and programing will be a good fit for me.
+            I also do IT stuff for Titan. I am really looking forward to this next chapter.</strong>
+    </h4>
     <form>
-            <textarea name="editor1" id="editor1" rows="10" cols="80">
+        <textarea name="editor1" id="editor1" rows="10" cols="80">
                 This is my textarea to be replaced with CKEditor.  Learning to expand on this code is fun. Now what do I do with my text...
             </textarea>
-            <script>
-                // Replace the <textarea id="editor1"> with a CKEditor
-                // instance, using default configuration.
-                CKEDITOR.replace( 'editor1' );
-            </script>
-        </form>
+        <script>
+            // Replace the <textarea id="editor1"> with a CKEditor
+            // instance, using default configuration.
+            CKEDITOR.replace('editor1');
+        </script>
+    </form>
     <!-- Footer -->
     <div class="footer">
-        <p>Bootstrap Theme Made By Nick Hosley &reg;</p>
+        <p>This site created by Nick Hosley click
+            <a href="https://nikolaizemlin.github.io/mainsite/">Here</a> to return home.</p>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
